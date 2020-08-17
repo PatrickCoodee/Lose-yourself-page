@@ -1,0 +1,71 @@
+html {
+  font-size: 50%;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav .navigation {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero .hero-text {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .attributes .items .item {
+    margin: 0 2rem;
+  }
+
+  .tours-section .tours {
+    display: block;
+  }
+  .tours .tour-item .tour-text div a {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .features .feature-box {
+    flex-direction: column;
+  }
+
+  .features .feature-box .feature {
+    flex: 1;
+  }
+
+  .features .feature-box .feature .feature-img {
+    height: 50rem;
+  }
+
+  .main-footer .footer-flex {
+    flex-direction: column;
+  }
+
+  .main-footer .news-letter .form-group input,
+  .main-footer .news-letter .form-group textarea {
+    width: 100%;
+  }
+
+  .main-footer .news-letter button {
+    width: 100%;
+  }
+
+  .main-footer .news-letter {
+    margin-bottom: 2rem;
+    flex: 1;
+  }
+
+  .main-footer .socials {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

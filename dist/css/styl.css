@@ -1,0 +1,367 @@
+/* RESET */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CORE */
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 62.5%;
+  color: #333;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  list-style: none;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* REUSABLE COMPONENTS */
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  min-height: 15vh;
+}
+
+nav .logo {
+  font-size: 4rem;
+  font-weight: 300;
+}
+nav .logo i {
+  font-size: 4.5rem;
+}
+
+nav .navigation {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .navigation a {
+  font-size: 1.4rem;
+  font-size: 100;
+}
+
+nav .navigation .main-nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .navigation .main-nav a:link,
+nav .navigation .main-nav a:visited {
+  padding: 0.8rem 1.7rem;
+  color: #999;
+}
+
+nav .navigation .main-nav a:hover {
+  background: #eae5eb;
+  color: #8d7292;
+}
+
+nav .navigation .login-btn {
+  padding: 0.8rem 1.6rem;
+  justify-self: center;
+  color: #999;
+}
+
+nav .navigation .login-btn i {
+  font-size: 3rem;
+  vertical-align: middle;
+  margin-right: 1.3rem;
+  color: #333;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 5rem;
+  height: 3px;
+  margin: 0.75rem 0;
+  background: #333;
+}
+
+/* hero */
+.hero {
+  height: 60vh;
+  background-image: linear-gradient(
+      rgba(127, 79, 179, 0.603),
+      rgba(251, 140, 171, 0.664)
+    ),
+    url(/dist/img/adrian-FrSEEdYr418-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+}
+
+.hero .container {
+  height: 100%;
+}
+
+.hero .hero-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .hero-text h1 {
+  font-weight: 300;
+  font-size: 6rem;
+}
+
+.hero .hero-text .m-heading {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.hero .hero-text .s-heading {
+  margin-bottom: 3rem;
+}
+
+.line {
+  height: 2px;
+  background: #fff;
+}
+
+.top {
+  width: 450px;
+}
+
+.bottom {
+  width: 600px;
+}
+
+/* attributes */
+
+.attributes .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.attributes .items .item {
+  text-align-last: center;
+  margin: 0 4rem;
+}
+
+.attributes .items .item div {
+  margin-top: -1rem;
+}
+
+.attributes .items .item .attribute-text {
+  font-size: 2rem;
+}
+
+/* tours */
+
+.tours-section .tours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tours-section .container {
+  padding: 0 1rem;
+}
+
+.tours .tour-item {
+  flex: 0 0 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tours .tour-item .tour-img {
+  width: 100%;
+}
+
+.tours .tour-item .tour-text {
+  display: flex;
+  padding: 2rem 0 3rem 0;
+  font-weight: 300;
+}
+
+.tours .tour-item .tour-text img {
+  display: block;
+  border-right: 1px solid #eee;
+  padding-right: 1rem;
+}
+.tours .tour-item .tour-text div {
+  flex: 2;
+  position: relative;
+}
+
+.tours .tour-item .tour-text div h4 {
+  font-size: 2.1rem;
+  border-bottom: 1px solid #b4a9b8;
+}
+
+.tours .tour-item .tour-text div p {
+  font-size: 2rem;
+}
+
+.tours .tour-item .tour-text div a {
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 0 4rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #726277;
+  color: #fff;
+}
+
+/* features */
+
+.features {
+  background-color: #f8f5ef;
+}
+
+.features .feature-box {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.features .feature-box .feature {
+  flex-basis: 30%;
+}
+
+.features .feature-box .feature .feature-img {
+  height: 30rem;
+  width: auto;
+}
+.features .feature-box .feature .feature-img img {
+  background: #fff;
+  padding: 1rem;
+  object-position: 50% 50%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.feature .feature-text {
+  position: relative;
+  z-index: 2;
+  margin-top: -4rem;
+  background: #fff;
+  color: #837487;
+  padding: 2rem;
+}
+
+.feature .feature-text .head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.feature .feature-text .head .main {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.feature .feature-text .sub {
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+.feature .feature-text .body {
+  text-align-last: left;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* footer */
+
+.main-footer {
+  background: #cabdcd;
+  padding: 2rem 0;
+}
+
+.main-footer .footer-flex {
+  display: flex;
+}
+
+.main-footer .news-letter {
+  flex: 2;
+}
+.main-footer .news-letter h4 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.main-footer .news-letter .form-group {
+  padding: 1rem 0;
+}
+
+.main-footer .news-letter .form-group input,
+.main-footer .news-letter .form-group textarea {
+  border: none;
+  padding: 1rem;
+  width: 70%;
+}
+
+.main-footer .news-letter button {
+  display: inline-block;
+  padding: 0.9rem 1.7rem;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: #333;
+}
+
+.main-footer .socials {
+  flex: 1;
+}
+
+.main-footer .socials div {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.main-footer .socials div p {
+  margin: 1rem 0;
+}
+
+.main-footer .socials .social-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-footer .socials .social-links i {
+  font-size: 3rem;
+  color: #fff;
+}
